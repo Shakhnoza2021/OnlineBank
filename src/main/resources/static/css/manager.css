@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 120px 15px 110px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7px 0;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #3e8e41;
+}
+
+.logoutForm {
+    margin: 0;
+}
+
+.logoutBtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #0000003b #0000003b;
+    margin: 0 35px 0 0;
+}
+
+.text, .text:hover, .text:active{
+    text-decoration: none;
+    color: #2121b3;
+}
+
+.title {
+    margin: 50px 0 0 0;
+    font-size: 26px;
+}
+
+hr {
+    border: none;
+    background-color: #3e8e41;
+    color: #3e8e41;
+    height: 2px;
+    width: 100%;
+}
+
+.menu {
+    font-size: 20px;
+    padding-bottom: 10px;
+}

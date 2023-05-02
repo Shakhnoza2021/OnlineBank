@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/user.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+<div class="head">
+    <a th:href="@{/main/home}" class="logo">НСК Банк</a>
+    <div class="topMenu">
+        <a class="topMenuBtn" th:href="@{/user/main}">Главная</a>
+        <a class="topMenuBtn" th:href="@{/user/payments}">Платежи</a>
+        <a class="topMenuBtn" th:href="@{/user/transfer}">Переводы</a>
+        <a class="topMenuBtn" th:href="@{/user/history/cardSelection}">История</a>
+    </div>
+    <table class="profileTable">
+        <tr>
+            <td><a href=""><img class="profileImg" src="/images/profile.png"></a></td>
+            <td><a href="" id="userName" th:text="${person.getName()}"></a></td>
+            <td><a href="" id="profileTxt"> Профиль</a></td>
+        </tr>
+    </table>
+    <form class="logoutForm" th:action="@{/auth/logout}" th:method="post">
+        <button class="logoutBtn" type="submit" value="logout"> Выход </button>
+    </form>
+</div>
+<div class="title">Здравствуйте, <span th:text="${person.getName()}"></span>!</div><hr>
+<div>
+    <table class="products">
+        <tr>
+            <td class="menu"><a th:href="@{/user/cards}">Карты</a> </td>
+            <td class="menu"><span th:if="${cardsErr}" th:text="${cardsErr}" class="error"></span></td>
+        </tr>
+        <tr>
+            <td class="menu"><a th:href="@{/user/credits}">Кредиты</a> </td>
+            <td class="menu"><span th:if="${creditsErr}" th:text="${creditsErr}" class="error"></span></td>
+        </tr>
+        <tr>
+            <td class="menu"><a th:href="@{/user/accounts}">Счета</a> </td>
+            <td class="menu"><span th:if="${accountsErr}" th:text="${accountsErr}" class="error"></span></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

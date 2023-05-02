@@ -1,0 +1,138 @@
+html {
+    background-image: url(../images/fon.jpg); /* Фоновое изображение */
+    background-color: #c7b39b;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-size: cover;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner {
+    text-align: center;
+    width: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.welcome{
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 5px;
+    text-align: left;
+}
+
+.outer {
+    position: absolute;
+    top: 44%;
+    left: 26%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.outer .form-entry {
+    position: relative;
+    margin: 5px 20px;
+    background: rgb(115 165 149 / 30%);
+    max-width: 270px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 15px 15px 0 15px;
+}
+
+.outer .entry {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.outer input[type="text"],
+.outer input[type="password"],
+.outer button {
+    margin-bottom: 25px;
+    height: 40px;
+    outline: 0;
+}
+
+.outer input[type="text"],
+.outer input[type="password"] {
+    /*width: calc(80% - 50px);*/
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0 0 0 50px;
+    font-size: 14px;
+    color: black !important;
+}
+
+.outer input[type="text"]:focus,
+.outer input[type="password"]:focus {
+    border-bottom: 1px solid #ccc;
+    color: #eee;
+}
+
+.outer a {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.outer button {
+    width: 80%;
+    background: none;
+    border:none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+}
+
+.outer button:disabled{
+    border: 1px solid #fffefe7d;
+    cursor: default;
+    color: #fffefe7d;
+}
+.outer *::-webkit-input-placeholder {
+    color: #666;
+}
+
+.outer *:-moz-placeholder {
+    color: #666;
+}
+
+.outer *::-moz-placeholder {
+    color: #666;
+}
+
+.outer *:-ms-input-placeholder {
+    color: #666;
+}
+
+.outer p {
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: initial;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.welcome p{
+    font-size: 18px;
+}

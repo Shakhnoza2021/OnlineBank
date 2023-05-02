@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/user.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+    <title>Счета</title>
+</head>
+<div class="head">
+    <a th:href="@{/main/home}" class="logo">НСК Банк</a>
+    <div class="topMenu">
+        <a class="topMenuBtn" th:href="@{/user/main}">Главная</a>
+        <a class="topMenuBtn" th:href="@{/user/payments}">Платежи</a>
+        <a class="topMenuBtn" th:href="@{/user/transfer}">Переводы</a>
+        <a class="topMenuBtn" th:href="@{/user/history/cardSelection}">История</a>
+    </div>
+    <table class="profileTable">
+        <tr>
+            <td><a href=""><img class="profileImg" src="/images/profile.png"></a></td>
+            <td><a href="" id="userName" th:text="${person.getName()}"></a></td>
+            <td><a href="" id="profileTxt"> Профиль</a></td>
+        </tr>
+    </table>
+    <form class="logoutForm" th:action="@{/auth/logout}" th:method="post">
+        <button class="logoutBtn" type="submit" value="logout"> Выход </button>
+    </form>
+</div>
+<div class="title">Счета</div><hr>
+<div class="tableOut">
+    <table class="table">
+        <tr>
+            <th>Наименование</th>
+            <th>Сумма, руб.</th>
+            <th>Номер счета</th>
+        </tr>
+        <tr th:each="account : ${accounts}">
+            <td align="left" th:text="${account.getName()}"></td>
+            <td align="left" th:text="${account.getSum()}"></td>
+            <td align="left" th:text="${account.getNumber()}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

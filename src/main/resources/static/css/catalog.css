@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 120px 15px 110px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7px 0;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #3e8e41;
+}
+
+.itemHead {
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.itemTable {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 50px;
+}
+
+.itemType {
+    font-size: 36px;
+}
+
+.idea {
+    color: #000000ab;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.term {
+    color: #000000ab;
+    margin-top: 20px;
+}
+
+td {
+    width: 1100px;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px 20px 20px 0;
+}
+
+tr {
+    height: 57px;
+    padding: 20px 20px 20px 20px;
+}
+
+.verticalAlign {
+    vertical-align: middle;
+}
+
+hr {
+    border: none;
+    background-color: #3e8e41;
+    color: #3e8e41;
+    height: 2px;
+}
+
+.topMenu {
+    display: inline;
+    padding: 0 0 0 60px;
+}
+
+.dropBtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.loginBtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #0000003b #0000003b;
+    margin: 0 35px 0 0;
+}
+
+.dropdown {
+    float: left;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    padding-left: 110px;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 0 16px 0;
+}
+
+img {
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {color: #3e8e41;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropBtn {color: #3e8e41;}
+
+.loginBtn:hover {border-color: #3e8e41;}

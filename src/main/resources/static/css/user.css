@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 120px 15px 110px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7px 0;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #3e8e41;
+}
+
+.topMenu {
+    display: inline-block;
+    padding-left: 60px;
+    margin-bottom: 5px;
+}
+
+.logoutForm {
+    margin: 0;
+}
+
+.logoutBtn, .profileTable, .historyBtn{
+    background-color: #ffffff;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #0000003b #0000003b;
+    margin: 0 35px 0 0;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.topMenuBtn {
+    background: white;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#profileTxt {
+    color: #00000066;
+}
+
+#userName {
+    color: #3e8e41;
+}
+
+.profileTable {
+    width: min-content;
+    max-height: min-content;
+}
+
+.title {
+    margin: 50px 0 0 0;
+    font-size: 26px;
+}
+
+.caption {
+    margin: 10px 0 10px 0;
+    font-size: 22px;
+    padding: 0 0 0 5px;
+}
+
+.form {
+    display: inline-grid;
+    justify-content: start;
+}
+
+hr {
+    border: none;
+    background-color: #3e8e41;
+    color: #3e8e41;
+    height: 2px;
+    width: 100%;
+}
+
+.tableOut {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.options {
+    border: 2px solid #3e8e41;
+    width: 350px !important;
+    border-radius: 4px;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 2px solid #3e8e41;
+    border-radius: 4px;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 350px;
+}
+
+.error {
+    color: red;
+    margin: 0 0 15px 0;
+}
+
+.submitBtn {
+    background: #a6e3a8;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid #3e8e41;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.infoBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.infoBlock {
+    margin-bottom: 20px;
+}
+
+.options:focus, .provider:focus, .company:focus, .type:focus, input {
+    outline: none!important;
+}
+
+.submitBtn:hover {
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.topMenuBtn:hover {
+    border-bottom: 3px solid #3e8e41;
+}
+
+.logoutBtn:hover, .profile:hover {border-color: #3e8e41;}

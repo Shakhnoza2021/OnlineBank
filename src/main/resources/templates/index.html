@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>Online_Bank</title>
+</head>
+<body>
+<div class="head">
+    <a th:href="@{/main/home}" class="logo">НСК Банк</a>
+    <a th:href="@{/auth/login}"><button class="loginBtn"> Онлайн-банк</button></a>
+</div>
+<div class="topMenu">
+    <div class="dropdown">
+        <button class="dropBtn"> Кредиты</button>
+        <div class="dropdown-content">
+            <a th:href="@{/main/credit}">Все кредиты</a>
+            <a th:href="@{/main/credit#creditCash}">Кредит наличными</a>
+            <a th:href="@{/main/credit#creditEdu}">Кредит на образование                                                                                                                                                                                     </a>
+            <a th:href="@{/main/card}">Кредитные карты</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropBtn"> Карты</button>
+        <div class="dropdown-content">
+            <a th:href="@{/main/card}">Все карты</a>
+            <a th:href="@{/main/card#creditCards}">Кредитные карты</a>
+            <a th:href="@{/main/card#debitCards}">Дебетовые карты</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropBtn"> Ипотека</button>
+        <div class="dropdown-content">
+            <a th:href="@{/main/hypothec}">Все ипотечные кредиты</a>
+            <a th:href="@{/main/hypothec#newHouse}">Ипотека на новостройки</a>
+            <a th:href="@{/main/hypothec#secondHouse}">Ипотека вторичное жильё</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropBtn"> Автокредиты</button>
+        <div class="dropdown-content">
+            <a th:href="@{/main/autocredit}">Все автокредиты</a>
+            <a th:href="@{/main/autocredit#newCar}">Новый автомобиль</a>
+            <a th:href="@{/main/autocredit#usedCar}">Автомобиль с пробегом</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropBtn"> Вклады</button>
+        <div class="dropdown-content">
+            <a th:href="@{/main/deposit}">Все вклады</a>
+            <a th:href="@{/main/deposit#controlDep}">Вклад "Управляемый"</a>
+            <a th:href="@{/main/deposit#futureDep}">"Вклад в будущее"</a>
+            <a th:href="@{/main/deposit#saveAccDep}">Накопительный счет</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropBtn"> Платежи и переводы</button>
+        <div class="dropdown-content">
+            <a th:href="@{/main/transfer}">Перевод с карты на карту</a>
+            <a th:href="@{/main/payment}">Оплата услуг</a>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="inform">Специальные предложения</div>
+    <div class="inform_block">
+        <table class="informTable">
+            <tr><td class="img"><a th:href="@{/main/deposit#controlDep}"><img src="/images/deposit_1.jpg"></a></td></tr>
+            <tr><td class="informName">Вклад "Управляемый"</td></tr>
+            <tr><td><div class="maxHeight">Выгода до 11% годовых</div></td></tr>
+        </table>
+        <table class="informTable">
+            <tr><td class="img"><a th:href="@{/main/card#debitCards}"><img src="/images/debit_card_1.jpg"/></a></td></tr>
+            <tr><td class="informName">Дебетовая карта Мир</td></tr>
+            <tr><td><div class="maxHeight">Бесплатная карта без ограничений и с кэшбэком за покупки</div></td></tr>
+        </table>
+        <table class="informTable">
+            <tr><td class="img"><a th:href="@{/main/card#creditCards}"><img src="/images/credit_card_1.jpg"></a></td></tr>
+            <tr><td class="informName">Кредитная карта Платинум</td></tr>
+            <tr><td><div class="maxHeight">Бесплатное обслуживание и 120 дней без процентов</div></td></tr>
+        </table>
+    </div>
+</div>
+</body>

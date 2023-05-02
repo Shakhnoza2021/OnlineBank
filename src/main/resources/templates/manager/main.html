@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/manager.css">
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
+    <title>Менеджер</title>
+</head>
+<body>
+<div class="head">
+    <a th:href="@{/}" class="logo">НСК Банк</a>
+    <form class="logoutForm" th:action="@{/auth/logout}" th:method="post">
+        <button class="logoutBtn" type="submit" value="logout"> Выход </button>
+    </form>
+</div>
+
+<div class="title">Здравствуйте, <span th:text="${person.getName()}"></span>!</div><hr>
+
+<div>
+    <table>
+        <tr><td class="menu"><a class="text" href="creditApp">Заявки по кредитам</a> </td></tr>
+        <tr><td class="menu"><a class="text" href="cardApp">Заявки на заведение/закрытие банковских карт</a> </td></tr>
+        <tr><td class="menu"><a class="text" href="editUser">Редактировать пользователя</a> </td></tr>
+        <tr><td class="menu"><a class="text" href="<c:url value='/secure/managerView/add.jsp'/>">Добавить пользователя</a> </td></tr>
+    </table>
+
+</div>
+</body>
+</html>
